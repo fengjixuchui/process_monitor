@@ -36,9 +36,3 @@ set(SRC
 )
 
 add_executable(process_monitor ${SRC})
-
-if (WIN32)
-	target_link_libraries(process_monitor python3.7)
-else()
-	target_link_libraries(xstep_client_test python2.7)
-endif()
